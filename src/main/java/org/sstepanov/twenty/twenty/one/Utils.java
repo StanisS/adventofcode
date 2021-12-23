@@ -18,7 +18,7 @@ public class Utils {
     private static final String TEST_CLASS_FILE_PATTERN = "src/test/java/org/sstepanov/twenty/twenty/one/Day%sTest.java";
     private static final String TEST_DATA_FILE_PATTERN = "src/test/resources/Day%s.txt";
 
-//    Download data file for day [value of 'session' cookie from browser]
+    //    Download data file for day [value of 'session' cookie from browser]
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter day");
@@ -45,13 +45,11 @@ public class Utils {
                                 
                 import java.nio.file.Files;
                 import java.nio.file.Path;
-                import java.util.HashMap;
-                import java.util.Map;
                 import java.util.Objects;
                 import java.util.stream.Stream;
                                 
                 public class Day%1$s {
-                    public static final String DATA_FILE = "Day%1$s.txt";
+                    private static final String DATA_FILE = "Day%1$s.txt";
                     
                     public static void main(String[] args) throws Exception {
                             System.out.println("1: " + part1());
@@ -81,16 +79,16 @@ public class Utils {
                 package org.sstepanov.twenty.twenty.one;
                  
                 import org.junit.jupiter.api.Test;
-                
+                                
                 import static org.junit.jupiter.api.Assertions.assertEquals;
-                
+                                
                 public class Day%1$sTest {
-                
+                                
                     @Test
                     void part1() throws Exception {
                         assertEquals(-1, Day%1$s.part1());
                     }
-                
+                                
                     @Test
                     void part2() throws Exception {
                         assertEquals(-1, Day%1$s.part2());
