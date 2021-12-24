@@ -52,22 +52,22 @@ public class Utils {
                     private static final String DATA_FILE = "Day%1$s.txt";
                     
                     public static void main(String[] args) throws Exception {
-                            System.out.println("1: " + part1());
-                            System.out.println("2: " + part2());
+                        System.out.println("1: " + part1());
+                        System.out.println("2: " + part2());
                     }
                     
                      public static int part1() throws Exception {
-                            getLines();
-                            return 0;
+                        getLines();
+                        return 0;
                      }
                      
                      public static int part2() throws Exception {
-                            getLines();
-                            return 0;
+                        getLines();
+                        return 0;
                      }
                      
-                     private static Stream<String> getLines() throws IOException, URISyntaxException {
-                             return Files.lines(Path.of(Objects.requireNonNull(Thread.currentThread().getContextClassLoader().getResource(DATA_FILE)).toURI()));
+                     private static Stream<String> getLines() throws Exception {
+                         return Files.lines(Path.of(Objects.requireNonNull(Thread.currentThread().getContextClassLoader().getResource(DATA_FILE)).toURI()));
                      }
                 }
                 """, day).getBytes(StandardCharsets.UTF_8)));
